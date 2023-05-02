@@ -3,169 +3,155 @@
 
 <head>
     <title>Random Image Gallery</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-
+    
+    <!-- <link href="css/bootstrap.css" rel="stylesheet"> -->
     <link href="css/style.css" rel="stylesheet">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <style>
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            grid-gap: 20px;
-        }
-
-        .gallery img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-        }
-    </style>
 </head>
 
 <body>
-    <div class="mt-5"></div>
-    <h1 class="text-center">Jquery Responsive Multi Item Carousel</h1>
-    <div class="container mt-5">
-        <!-- <div class="gallery" id="image-gallery"></div> -->
-        <div class=" d-flex mb-3">
-            <div class="widget" style="max-width: 1200px; width:100%;">
-                <h5 class="title text-center pt-2">Filter by Category</h5>
-                <div class="retailer-category-section-inner initial owl-carousel owl-theme owl-responsive-600 owl-loaded"
-                    data-was-processed="true">
+    <div class="mt-5">
+        <h1 class="text-center">Jquery Responsive Multi Item Carousel</h1>
+        <div class="container mt-5">
+            <!-- <div class="gallery" id="image-gallery"></div> -->
+            <div class=" d-flex mb-3">
+                <div class="widget" style="max-width: 1200px; width:100%;">
+                    <h5 class="title text-center pt-2">Filter by Category</h5>
+                    <div class="retailer-category-section-inner initial owl-carousel owl-theme owl-responsive-600 owl-loaded"
+                        data-was-processed="true">
 
-                    <div class="row">
-                        <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"
-                            data-interval="1000">
-                            <div class="MultiCarousel-inner">
+                        <div class="row">
+                            <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"
+                                data-interval="1000">
+                                <div class="MultiCarousel-inner">
 
-                                <div class="item" style="width:80px;">
-                                    <div class=" category-new">
-                                        <img class="image-gallery" style="width:80%; border-radius: 5%;"
-                                            src="https://picsum.photos/200/" alt="name">
-                                        <p class="name"
-                                            style="font-size: 10pt;line-height: 1.1;text-align: center; padding-top:20px; padding-bottom:10px">
-                                        </p>
+                                    <div class="item" style="width:80px;">
+                                        <div class=" category-new">
+                                            <img class="image-gallery" style="width:80%; border-radius: 5%;"
+                                                src="assets/no-image.jpg" alt="name">
+                                            <p class="name"
+                                                style="font-size: 10pt;line-height: 1.1;text-align: center; padding-top:20px; padding-bottom:10px">
+                                            </p>
 
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="item" style="width:80px;">
-                                    <div class=" category-new">
-                                        <img class="image-gallery" style="width:80%; border-radius: 5%;"
-                                            src="https://picsum.photos/200/" alt="name">
-                                        <p class="name"
-                                            style="font-size: 10pt;line-height: 1.1;text-align: center; padding-top:20px; padding-bottom:10px">
-                                        </p>
+                                    <div class="item" style="width:80px;">
+                                        <div class=" category-new">
+                                            <img class="image-gallery" style="width:80%; border-radius: 5%;"
+                                                src="assets/no-image.jpg" alt="name">
+                                            <p class="name"
+                                                style="font-size: 10pt;line-height: 1.1;text-align: center; padding-top:20px; padding-bottom:10px">
+                                            </p>
 
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="item" style="width:80px;">
-                                    <div class=" category-new">
-                                        <img class="image-gallery" style="width:80%; border-radius: 5%;"
-                                            src="https://picsum.photos/200/" alt="name">
-                                        <p class="name"
-                                            style="font-size: 10pt;line-height: 1.1;text-align: center; padding-top:20px; padding-bottom:10px">
-                                        </p>
+                                    <div class="item" style="width:80px;">
+                                        <div class=" category-new">
+                                            <img class="image-gallery" style="width:80%; border-radius: 5%;"
+                                                src="assets/no-image.jpg" alt="name">
+                                            <p class="name"
+                                                style="font-size: 10pt;line-height: 1.1;text-align: center; padding-top:20px; padding-bottom:10px">
+                                            </p>
 
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="item" style="width:80px;">
-                                    <div class=" category-new">
-                                        <img class="image-gallery" style="width:80%; border-radius: 5%;"
-                                            src="https://picsum.photos/200/" alt="name">
-                                        <p class="name"
-                                            style="font-size: 10pt;line-height: 1.1;text-align: center; padding-top:20px; padding-bottom:10px">
-                                        </p>
+                                    <div class="item" style="width:80px;">
+                                        <div class=" category-new">
+                                            <img class="image-gallery" style="width:80%; border-radius: 5%;"
+                                                src="assets/no-image.jpg" alt="name">
+                                            <p class="name"
+                                                style="font-size: 10pt;line-height: 1.1;text-align: center; padding-top:20px; padding-bottom:10px">
+                                            </p>
 
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="item" style="width:80px;">
-                                    <div class=" category-new">
-                                        <img class="image-gallery" style="width:80%; border-radius: 5%;"
-                                            src="https://picsum.photos/200/" alt="name">
-                                        <p class="name"
-                                            style="font-size: 10pt;line-height: 1.1;text-align: center; padding-top:20px; padding-bottom:10px">
-                                        </p>
+                                    <div class="item" style="width:80px;">
+                                        <div class=" category-new">
+                                            <img class="image-gallery" style="width:80%; border-radius: 5%;"
+                                                src="assets/no-image.jpg" alt="name">
+                                            <p class="name"
+                                                style="font-size: 10pt;line-height: 1.1;text-align: center; padding-top:20px; padding-bottom:10px">
+                                            </p>
 
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="item" style="width:80px;">
-                                    <div class=" category-new">
-                                        <img class="image-gallery" style="width:80%; border-radius: 5%;"
-                                            src="https://picsum.photos/200/" alt="name">
-                                        <p class="name"
-                                            style="font-size: 10pt;line-height: 1.1;text-align: center; padding-top:20px; padding-bottom:10px">
-                                        </p>
+                                    <div class="item" style="width:80px;">
+                                        <div class=" category-new">
+                                            <img class="image-gallery" style="width:80%; border-radius: 5%;"
+                                                src="assets/no-image.jpg" alt="name">
+                                            <p class="name"
+                                                style="font-size: 10pt;line-height: 1.1;text-align: center; padding-top:20px; padding-bottom:10px">
+                                            </p>
 
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="item" style="width:80px;">
-                                    <div class=" category-new">
-                                        <img class="image-gallery" style="width:80%; border-radius: 5%;"
-                                            src="https://picsum.photos/200/" alt="name">
-                                        <p class="name"
-                                            style="font-size: 10pt;line-height: 1.1;text-align: center; padding-top:20px; padding-bottom:10px">
-                                        </p>
+                                    <div class="item" style="width:80px;">
+                                        <div class=" category-new">
+                                            <img class="image-gallery" style="width:80%; border-radius: 5%;"
+                                                src="assets/no-image.jpg" alt="name">
+                                            <p class="name"
+                                                style="font-size: 10pt;line-height: 1.1;text-align: center; padding-top:20px; padding-bottom:10px">
+                                            </p>
 
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="item" style="width:80px;">
-                                    <div class=" category-new">
-                                        <img class="image-gallery" style="width:80%; border-radius: 5%;"
-                                            src="https://picsum.photos/200/" alt="name">
-                                        <p class="name"
-                                            style="font-size: 10pt;line-height: 1.1;text-align: center; padding-top:20px; padding-bottom:10px">
-                                        </p>
+                                    <div class="item" style="width:80px;">
+                                        <div class=" category-new">
+                                            <img class="image-gallery" style="width:80%; border-radius: 5%;"
+                                                src="assets/no-image.jpg" alt="name">
+                                            <p class="name"
+                                                style="font-size: 10pt;line-height: 1.1;text-align: center; padding-top:20px; padding-bottom:10px">
+                                            </p>
 
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="item" style="width:80px;">
-                                    <div class=" category-new">
-                                        <img class="image-gallery" style="width:80%; border-radius: 5%;"
-                                            src="https://picsum.photos/200/" alt="name">
-                                        <p class="name"
-                                            style="font-size: 10pt;line-height: 1.1;text-align: center; padding-top:20px; padding-bottom:10px">
-                                        </p>
+                                    <div class="item" style="width:80px;">
+                                        <div class=" category-new">
+                                            <img class="image-gallery" style="width:80%; border-radius: 5%;"
+                                                src="assets/no-image.jpg" alt="name">
+                                            <p class="name"
+                                                style="font-size: 10pt;line-height: 1.1;text-align: center; padding-top:20px; padding-bottom:10px">
+                                            </p>
 
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="item" style="width:80px;">
-                                    <div class=" category-new">
-                                        <img class="image-gallery" style="width:80%; border-radius: 5%;"
-                                            src="https://picsum.photos/200/" alt="name">
-                                        <p class="name"
-                                            style="font-size: 10pt;line-height: 1.1;text-align: center; padding-top:20px; padding-bottom:10px">
-                                        </p>
+                                    <div class="item" style="width:80px;">
+                                        <div class=" category-new">
+                                            <img class="image-gallery" style="width:80%; border-radius: 5%;"
+                                                src="assets/no-image.jpg" alt="name">
+                                            <p class="name"
+                                                style="font-size: 10pt;line-height: 1.1;text-align: center; padding-top:20px; padding-bottom:10px">
+                                            </p>
 
+                                        </div>
                                     </div>
-                                </div>
-                                
 
-                                <div class="item" style="width:80px;">
-                                    <div class=" category-new">
-                                        <img style="width:80%; border-radius: 5%;"
-                                            src="https://picsum.photos/id/237/200/200" alt="name">
-                                        <p class="name"
-                                            style="font-size: 10pt;line-height: 1.1;text-align: center; padding-top:20px; padding-bottom:10px">
-                                            name</p>
 
+                                    <div class="item" style="width:80px;">
+                                        <div class=" category-new">
+                                            <img style="width:80%; border-radius: 5%;"
+                                                src="assets/no-image.jpg" alt="name">
+                                            <p class="name"
+                                                style="font-size: 10pt;line-height: 1.1;text-align: center; padding-top:20px; padding-bottom:10px">
+                                                name</p>
+
+                                        </div>
                                     </div>
-                                </div>
 
+                                </div>
+                                <button class="btn btn-color leftLst">
+                                    <i class="fa fa-arrow-left"></i> </button>
+                                <button class="btn btn-color rightLst"><i class="fa fa-arrow-right"></i></button>
                             </div>
-                            <button class="btn btn-color leftLst">
-                                <i class="fa fa-arrow-left"></i> </button>
-                            <button class="btn btn-color rightLst"><i class="fa fa-arrow-right"></i></button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- <script src="env.js"></script> -->
+        <script src="js/jquery.min.js"></script>
         <script src="js/script.js"></script>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
