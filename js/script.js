@@ -1,3 +1,40 @@
+
+$(document).ready(function () {
+    // Select all images with the class name "gallery" using jQuery
+    $('.image-gallery').each(function () {
+
+        const randomNumber = Math.floor(Math.random() * 500) + 1;
+        // Manipulate the src attribute of each image element
+        $(this).attr('src', 'https://picsum.photos/id/' + randomNumber + '/200/200');
+    });
+    $('.name').each(function () {
+
+        
+        const randomNumber = Math.floor(Math.random() * 500) + 1;
+
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', 'data.json');
+        xhr.responseType = 'json';
+
+        xhr.onload = function (e) {
+            if (xhr.status === 200) {
+                const data = xhr.response;
+                console.log(data[randomNumber]);
+                e = data[randomNumber];
+                return e;
+            } else {
+                console.log('Error loading JSON file.');
+            }
+        };
+
+        // Send the AJAX request
+        $(this).val("e")
+        xhr.send();
+    });
+
+
+});
+
 (function ($) {
 
     var itemsMainDiv = ('.MultiCarousel');
