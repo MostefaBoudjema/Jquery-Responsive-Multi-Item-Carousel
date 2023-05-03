@@ -1,11 +1,19 @@
 $(document).ready(function () {
     // Select all images with the class name "gallery" using jQuery
     $('.image-gallery').each(function () {
-
+        const $img = $(this); // store a reference to the image element
         const randomNumber = Math.floor(Math.random() * 500) + 1;
-        // Manipulate the src attribute of each image element
-        $(this).attr('src', 'https://picsum.photos/id/' + randomNumber + '/200/200');
-    });
+        let image= 'https://picsum.photos/id/' + randomNumber + '/200/200';
+        $.get(image)
+          .done(function () {
+            console.log('done');
+            $img.attr('src', image);
+          })
+          .fail(function () {
+            console.log('fail');
+          });
+      });
+      
 
 
     $.getJSON('data.json', function (data) {
