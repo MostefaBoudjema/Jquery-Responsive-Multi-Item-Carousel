@@ -12,13 +12,10 @@ $(document).ready(function () {
           .fail(function () {
             console.log('fail');
           });
-      });
-      
+      });    
 
 
-    $.getJSON('data.json', function (data) {
-
-        // const randomNumber = Math.floor(Math.random() * 500) + 1;
+    $.getJSON('data/data.json', function (data) {
         $('p.name').each(function () {
             let randomIndex = Math.floor(Math.random() * data.length); // Generate a random index
             let randomElement = data[randomIndex]; // Select the element at the random index
@@ -135,4 +132,4 @@ $(document).ready(function () {
         ResCarousel(ell, Parent, slide);
     }
 
-})(jQuery)
+})($)
